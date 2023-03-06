@@ -1,0 +1,136 @@
+.header {
+  position: relative;
+  margin-top: 15px;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1250.98px) {
+    justify-content: space-between;
+  }
+}
+.header__logo {
+}
+
+.header__phone {
+  margin-left: 195px;
+  margin-right: 80px;
+
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.25;
+
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  color: #ffffff;
+
+  transition: color 250ms ease;
+  &:hover,
+  &:focus {
+    color: $linkHover;
+  }
+  @media screen and (max-width: 1749.98px) {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  @media screen and (max-width: 1439.98px) {
+    font-size: 26px;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+}
+.menu-container {
+  @media screen and (max-width: 1250.98px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #ffffff;
+    &.is-open {
+      display: flex;
+    }
+  }
+}
+.navigation {
+  width: 100%;
+}
+.navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  @media screen and (max-width: 1530.98px) {
+    gap: 20px;
+  }
+  @media screen and (max-width: 1250.98px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.navigation__item {
+  width: 100%;
+
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  color: #ffffff;
+
+  @media screen and (max-width: 1250.98px) {
+    color: $blackColor;
+    text-align: center;
+  }
+}
+.navigation__link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  transition: color 250ms ease;
+  &:hover,
+  &:focus {
+    color: $linkHover;
+  }
+  @media screen and (max-width: 1250.98px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.header__button {
+  margin-left: auto;
+
+  @media screen and (max-width: 1250.98px) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 479.98px) {
+    display: none;
+  }
+}
+
+.menu-button {
+  display: none;
+  @media screen and (max-width: 1250.98px) {
+    display: block;
+  }
+}
+.mobile-menu-icon {
+}
+.icon-cross {
+  fill: #ffffff;
+  display: none;
+  .menu-button.is-open & {
+    display: block;
+  }
+}
+.icon-menu {
+  fill: #ffffff;
+  .menu-button.is-open & {
+    display: none;
+  }
+}

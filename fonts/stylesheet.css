@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Blogger Sans';
+    src: url('BloggerSans-Medium.woff2') format('woff2'),
+        url('BloggerSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('ProximaNova-RegularCondensed.woff2') format('woff2'),
+        url('ProximaNova-RegularCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blogger Sans';
+    src: url('BloggerSans-Bold.woff2') format('woff2'),
+        url('BloggerSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

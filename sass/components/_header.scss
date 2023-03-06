@@ -22,8 +22,6 @@
   font-size: 34px;
   line-height: 1.25;
 
-  font-feature-settings: "pnum" on, "lnum" on;
-
   color: #ffffff;
 
   transition: color 250ms ease;
@@ -75,8 +73,6 @@
   }
 }
 .navigation__item {
-  font-feature-settings: "pnum" on, "lnum" on;
-
   color: #ffffff;
 
   @media screen and (max-width: 1250.98px) {

@@ -75,8 +75,6 @@
   }
 }
 .navigation__item {
-  width: 100%;
-
   font-feature-settings: "pnum" on, "lnum" on;
 
   color: #ffffff;
@@ -84,6 +82,7 @@
   @media screen and (max-width: 1250.98px) {
     color: $blackColor;
     text-align: center;
+    width: 100%;
   }
 }
 .navigation__link {
